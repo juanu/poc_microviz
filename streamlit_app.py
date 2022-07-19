@@ -13,8 +13,8 @@ genus = genus.set_index("Sample")
 muestra = st.multiselect(
     "Elija la muestra a visualizar", list(phylum.index)
 )
-print(muestra)
 
+st.title("Perfiles Taxonómicos")
 
 if not muestra:
     st.error("Por favor, elija una muestra para visualizar")
