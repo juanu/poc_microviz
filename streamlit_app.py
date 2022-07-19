@@ -1,7 +1,6 @@
 import streamlit as st
 import altair as alt
 import pandas as pd
-import numpy as np
 
 phylum = pd.read_csv("data/phylum.csv")
 phylum["Sample"] = phylum["Sample"].astype(str)
